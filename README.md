@@ -1,6 +1,6 @@
 [![Bass](img/png/logo-markdown.png)](https://nodesource.com/products/nsolid)
 
-> The palette and all the images not personally developed by the author belong to *Codecademy*. This sample web page has never been used for lucrative purposes and outside Codecademy's environment, and is only available at [Github's author personal page](https://www.github.com/gabrielecanepa) and [Codecademy's profile](https://www.codecademy.com/gabrielecanepa).
+> The palette and all the images not developed by the author belong to *Codecademy*. This sample web page has never been used for lucrative purposes and outside Codecademy's environment, and is only available at [Github's author personal page](https://www.github.com/gabrielecanepa) and [Codecademy's profile](https://www.codecademy.com/gabrielecanepa).
 
 **Bass** is an `HTML`, `CSS` and `Bootstrap` powered web template.
 

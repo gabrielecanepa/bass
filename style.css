@@ -171,8 +171,8 @@ html, body {
   width: auto;
   margin: 10px 32px;
   display: inline-block;
-  transition: background .16s;
-  -webkit-transition: background .16s;
+  transition: .08s;
+  -webkit-transition: .08s;
 }
 
 .main .features-img:hover {
@@ -344,7 +344,7 @@ html, body {
 
 .footer h4 {
   margin-top: 34px;
-  font-size: 16px;
+  font-size: 18px;
   display: block;
   text-transform: uppercase;
   transition: .32s;

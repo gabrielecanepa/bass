@@ -2,48 +2,45 @@
 <html lang="en">
 
   <head>
-    <link rel="stylesheet" href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css">
-    <link rel='stylesheet' href='style.css'/>
-    <link href="https://fonts.googleapis.com/css?family=Imprima" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="libraries/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fonts/PTSans">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
     <title>Bass</title>
     <meta name="description" content="Listen to your favorite artists and albums, and make playlists of your favorite songs.">
     <meta name="author" content="Gabriele Canepa">
-    <!--
-    The palette and all the images not created by the author belong to Codecademy.
-    This sample web page has never been used for lucrative purposes and outside Codecademy's environment, and is only available at Github's author personal page (https://www.github.com/gabrielecanepa).
-    The project was freely inspired by Codecademy's courses 'HTML & CSS' (https://www.codecademy.com/learn/web) and 'Make a Website' (https://www.codecademy.com/learn/make-a-website). -->
   </head>
 
   <body>
 
     <div class="jumbotron">
-
-      <div class="header">
-        <a href="#"><img title="Bass.com" alt="Bass" src="https://s3.amazonaws.com/codecademy-content/projects/bass/logo.svg" id="logo"/></a>
-        <ul class="pull-right">
-          <li><a href="#">Features</a></li>
-          <li><a href="#" class="btn btn-default">Download</a></li>
-        </ul>
-      </div>
-
-      <div class="main">
-        <h1>Music is now<span class="points">.</span> <span class="lg-text">Turn up the bass<span class="points">.</span></span></h1>
-        <h3>From the <b>newest releases</b> to <b>classic albums</b><span>,</span> we have the best music for you to enjoy<span>.</span></h3>
-        <div class="features">
-          <div alt="Play" title="" class="features-img" id="play"/>
-          <div alt="Connect" title="" class="features-img" id="add"/>
-          <div alt="Love" title="" class="features-img" id="love"/>
+      <div class="container">
+        <div class="header row">
+          <img title="Bass.com" alt="Bass.com" src="img/png/logo.png" id="logo"/>
+          <ul class="pull-right">
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#" class="btn btn-default">Download</a></li>
+          </ul>
         </div>
-        <a href="#"><span>Browse all the features</span> &raquo;</a>
+        <div class="main row">
+          <h1>Music is now<span class="points" id="h1-point">.</span><span>Turn up the bass<span class="points">.</span></h1>
+          <p><span class="underline">From the <a title="Browse &raquo;">newest releases</a> to <a title="Browse &#8594;">classic albums</a><span class="points">,</span> we have the best music for you to enjoy<span class="points">.</span></span></p>
+          <div class="features">
+            <div title="Play" alt="Play" class="features-img" id="play"></div>
+            <div title="Connect" alt="Connect" class="features-img" id="add"></div>
+            <div title="Love" alt="Love" class="features-img" id="love"></div>
+          </div>
+          <img title="" alt="Scroll Down" src="img/png/arrow.png" id="arrow"/>
+        </div>
       </div>
-
     </div>
 
     <div class="supporting">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-6">
-            <img alt="Music Just for You" title="" src="https://imgni.com/images/2017/06/08/you.png" style="width:90%">
+            <img alt="Music Just for You" title="" src="img/png/you.png" style="width: 80%; margin-left: 40px;">
           </div>
           <div class="col-md-6 col-sm-6 col-xs-6">
             <h2>Music <span>Just for You</span></h2>
@@ -65,7 +62,7 @@
             <a href="#" class="btn btn-default">Download on your device &raquo;</a>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-6">
-            <img alt="Listen Everywhere" title="" src="https://imgni.com/images/2017/06/08/everywhere.png">
+            <img alt="Listen Everywhere" title="" src="img/png/everywhere.png">
           </div>
         </div>
       </div>
@@ -75,7 +72,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-6">
-            <img alt="Connect with Others" title="" src="https://imgni.com/images/2017/06/08/connect.png" style="margin-left: 82px;">
+            <img alt="Connect with Others" title="" src="img/png/connect.png" style="margin-left: 82px;">
           </div>
           <div class="col-md-6 col-sm-6 col-xs-6">
             <h2><span>Connect</span> with Others</h2>
@@ -89,9 +86,11 @@
 
     <div class="download">
       <div class="container">
-        <img title="" alt="" src="" id="app"/>
-        <a href="#" alt="Download on the App Store"><img alt="Download on the App Store" title="Download on the App Store" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/800px-Download_on_the_App_Store_Badge.svg.png" class="store"></a>
-        <a href="#" alt="Get It on Google play"><img alt="Get It on Google play" title="Get It on Google play" src="https://www.microb3.eu/sites/default/files/osd/button-get-it-on-google-play.png" class="store"></a>
+        <div class="row">
+          <img title="Download now &raquo;" alt="Bass App" src="img/png/app.png" id="app"/>
+          <img title="Download on the App Store &raquo;" alt="Download on the App Store" class="store" src="img/png/app-store.png"/>
+          <img title="Get It on Google play &raquo;" alt="Get It on Google play" class="store" src="img/png/google-play.png"></div></a>
+        </div>
       </div>
     </div>
 

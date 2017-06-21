@@ -5,15 +5,17 @@ html, body {
   color: #FFF;
 }
 
+/* Jumbotron */
+
 .jumbotron {
-  background: url(https://s3.amazonaws.com/codecademy-content/projects/bass/bg.jpg) no-repeat center center;
+  background: url('img/jpg/bg.jpg') no-repeat center center;
   background-size: cover;
   padding: 60px 80px;
-  min-height: 700px;
+  min-height: 600px;
 }
 
 .header {
-  margin-bottom: 66px;
+  margin-bottom: 8px;
 }
 
 .header #logo {
@@ -22,100 +24,156 @@ html, body {
   display: inline-block;
 }
 
+.header #logo:hover {
+  cursor: pointer;
+}
+
 .header ul {
   list-style: none;
   display: inline-block;
-  margin-top: 40px;
+  margin-top: 48px;
 }
 
 .header li {
-  padding: 0 14px;
+  padding: 0 16px;
   display: inline;
 }
 
 .header li a {
   cursor: pointer;
   color: #FFF;
-  font-size: 17px;
+  font-size: 16px;
+  transition: border-bottom .04s;
+  -webkit-transition: border-bottom .04s;
 }
 
 .header li a:hover {
   text-decoration: none;
-  border-bottom: 1.5px solid #FF003D;
+  border-bottom: 2px solid #FF003D;
 }
 
 .header .btn {
   color: #FF003D;
   background-color: transparent;
-  border: 2.2px solid #FF003D;
-  border-radius: 6px;
-  transition: background .15s;
+  border: 2px solid #FF003D;
+  border-radius: 8px;
+  transition: background .16s;
+  -webkit-transition: background .16s;
 }
 
 .header .btn:hover {
   background-color: #FF003D;
   color: #FFF;
-  border: 2.2px solid #FF003D;
+  border: 2px solid #FF003D;
 }
 
 .main {
   text-align: center;
 }
 
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.08, 1.08, 1.08);
+    -webkit-transform: scale3d(1.08, 1.08, 1.08);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+
 .main h1 {
-  font-family: Imprima, sans-serif;
-  font-size: 60px;
+  font-size: 80px;
+  font-family: 'PT Sans Narrow', sans-serif;
   color: #FFF;
-  text-shadow: .5px .5px #000;
+  text-shadow: .4px .4px #000;
+  letter-spacing: .4px;
+  animation: 1.6s ease 0s 4 normal both running pulse;
+  -webkit-animation: 1.6s ease 0s 4 normal both running pulse;
+}
+
+.main h1 #h1-point {
+  font-size: 80px;
+}
+
+.main h1 span {
+  font-size: 120px;
   font-weight: bold;
+  letter-spacing: .8px;
 }
 
-.main h1 .lg-text {
-  font-size: 96px;
+@keyframes underline {
+  to {
+    visibility: visible;
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+  }
 }
 
-.main h1 .points {
-  color: #FF003D;
-}
-
-.main h3 {
+.main p {
+  position: relative;
   font-size: 26px;
   font-weight: 300;
-  text-shadow: .5px .5px #000;
-  margin-bottom: 38px;
+  text-shadow: .4px .4px #000;
+  text-decoration: none;
+  padding-bottom: 16px;
+  margin-bottom: 28px;
 }
 
-.main h3 span {
+
+.main p:before {
+  position: absolute;
+  content: "";
+  width: 992px;
+  height: 8px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  background-color: #FF003D;
+  visibility: hidden;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  animation: 1.6s ease 0s 1 normal both running underline;
+  -webkit-animation: 1.6s ease 0s 1 normal both running underline;
+}
+
+.main p a {
+  color: #FFF;
+  font-weight: bold;
+  transition: .4s;
+  -webkit-transition: .4s;
+}
+
+.main p a:hover {
+  color: #FF003D;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main .points {
   color: #FF003D;
 }
 
 .main .features {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .main .features-img {
-  height: 126px;
+  height: 128px;
+  width: auto;
   margin: 10px 32px;
   display: inline-block;
-  animation:
-    stretch
-    1.5s
-    ease-out
-    0s
-    alternate
-    infinite
-    none
-    running;
-    transition: background .6s;
-}
-
-@keyframes stretch {
-  0% {
-    filter: opacity(30%);
-  }
-  100% {
-    filter: initial;
-  }
+  transition: background .16s;
+  -webkit-transition: background .16s;
 }
 
 .main .features-img:hover {
@@ -123,57 +181,64 @@ html, body {
 }
 
 .main #play {
-  background: url('https://image.ibb.co/moCvck/play.png') no-repeat center center;
+  background: url('img/png/play.png') no-repeat center center;
   width: 76px;
 }
 
-.main #play:hover {
-  background: url('https://image.ibb.co/guD1Hk/play_hover.png') no-repeat center top;
+.main #play:hover, .main #play:focus {
+  background: url('img/png/play-hover.png') no-repeat center top;
 }
 
 .main #add {
-  background: url('https://image.ibb.co/kVbhOQ/add.png') no-repeat center center;
+  background: url('img/png/add.png') no-repeat center center;
   width: 111px;
 }
 
-.main #add:hover {
-  background: url('https://image.ibb.co/fNiU3Q/add_hover.png') no-repeat center top;
+.main #add:hover, .main #add:focus {
+  background: url('img/png/add-hover.png') no-repeat center top;
 }
 
 .main #love {
-  background: url('https://image.ibb.co/bKqLA5/love.png') no-repeat center center;
+  background: url('img/png/love.png') no-repeat center center;
   width: 91px;
 }
 
-.main #love:hover {
-  background: url('https://image.ibb.co/ixu8xk/love_hover.png') no-repeat center top;
+.main #love:hover, .main #love:focus {
+  background: url('img/png/love-hover.png') no-repeat center top;
 }
 
-.main a {
-  font-size: 32px;
-  color: #FF003D;
-  transition: .2s;
-  text-shadow: .5px .5px #000;
-  font-weight: 600;
-  margin-bottom: 100px;
+@keyframes pulse-infinite {
+  from {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.16, 1.16, 1.16);
+    -webkit-transform: scale3d(1.16, 1.16, 1.16);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
 }
 
-.main a span {
-  color: #FFF;
-  transition: .2s;
+.main #arrow {
+  width: 300px;
+  height: auto;
+  animation: 1.6s ease 0s infinite normal both running pulse-infinite;
+  -webkit-animation: 1.6s ease 0s infinite normal both running pulse-infinite;
 }
 
-.main a:hover {
-  text-decoration: none;
-  color: #FFF;
-}
-
-.main a span:hover {
-  color: #FF003D;
-}
+/* Supporting */
 
 .supporting {
-  padding: 70px 0;
+  padding: 72px 0;
+}
+
+.supporting:nth-child(2) {
+  padding-top: 40px;
 }
 
 .supporting:nth-child(2n+1) {
@@ -182,7 +247,8 @@ html, body {
 }
 
 .supporting img {
-  width: 60%
+  width: 60%;
+  height: auto;
 }
 
 .supporting h2 {
@@ -206,8 +272,9 @@ html, body {
   background-color: transparent;
   border: 1px solid #FF003D;
   border-radius: 5px;
-  transition: background .2s;
   margin-top: 10px;
+  transition: background .2s;
+  -webkit-transition: background .2s;
 }
 
 .supporting .btn:hover {
@@ -215,31 +282,65 @@ html, body {
   color: #FFF;
 }
 
+/* Download */
+
 .download {
-  min-height: 400px;
-  background: url("https://imgni.com/images/2017/05/02/iphone-3.jpg") no-repeat center center;
+  min-height: 440px;
+  background: url('img/jpg/download.jpg') no-repeat center center;
   background-size: cover;
   text-align: center;
+  padding: 48px 0;
+}
+
+@keyframes pulse-infinite-2 {
+  from {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.04, 1.04, 1.04);
+    -webkit-transform: scale3d(1.04, 1.04, 1.04);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
 }
 
 .download #app {
   display: block;
   margin: 0 auto;
-  filter: drop-shadow(5px 2px 2px rgb(0,0,0));
+  padding-bottom: 48px;
+  width: 240px;
+  height: auto;
+  filter: contrast(1.2) brightness(120%);
+  animation: 1.6s ease 0s infinite normal both running pulse-infinite-2;
+  -webkit-animation: 1.6s ease 0s infinite normal both running pulse-infinite-2;
+}
+
+.download #app:hover {
+  cursor: pointer;
 }
 
 .download .store {
-  width: 185px;
-  height: auto;
+  display: inline-block;
+  height: 60px;
+  width: auto;
+  margin: 0 20px;
 }
 
 .download .store:hover {
-  filter: contrast(130%);
+  cursor: pointer;
 }
 
+/* Footer */
+
 .footer {
-  height: 150px;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 48px;
 }
 
 .footer h4 {
@@ -247,7 +348,8 @@ html, body {
   font-size: 16px;
   display: block;
   text-transform: uppercase;
-  transition: .2s;
+  transition: .32s;
+  -webkit-transition: .32s;
 }
 
 .footer h4:hover {
@@ -261,5 +363,6 @@ html, body {
 }
 
 .footer a:hover {
+  text-decoration: underline solid #FF003D;
   -webkit-text-decoration: underline solid #FF003D;
 }

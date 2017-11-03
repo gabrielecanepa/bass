@@ -6,9 +6,8 @@ html, body {
 }
 
 /* Jumbotron */
-
 .jumbotron {
-  background: url('img/jpg/bg.jpg') no-repeat center center;
+  background: url('img/bg.jpg') no-repeat center center;
   background-size: cover;
   padding: 60px 80px;
   min-height: 600px;
@@ -55,8 +54,9 @@ html, body {
 .header .btn {
   color: #FF003D;
   background-color: transparent;
+  padding: 1rem 2rem;
   border: 2px solid #FF003D;
-  border-radius: 8px;
+  border-radius: 5px;
   transition: background .16s;
   -webkit-transition: background .16s;
 }
@@ -96,6 +96,7 @@ html, body {
   letter-spacing: .8px;
   animation: 1.6s ease 0s 4 normal both running pulse;
   -webkit-animation: 1.6s ease 0s 4 normal both running pulse;
+  letter-spacing: 0.1rem;
 }
 
 .main h1 #h1-point {
@@ -166,44 +167,70 @@ html, body {
   margin-bottom: 28px;
 }
 
-.main .features-img {
-  height: 128px;
-  width: auto;
-  margin: 10px 32px;
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+.main .features img {
+  width: 10rem;
+  margin: 4rem;
+  margin-bottom: 0;
   display: inline-block;
-  transition: .08s;
-  -webkit-transition: .08s;
-}
-
-.main .features-img:hover {
-  cursor: pointer;
-}
-
-.main #play {
-  background: url('img/png/play.png') no-repeat center center;
-  width: 76px;
-}
-
-.main #play:hover, .main #play:focus {
-  background: url('img/png/play-hover.png') no-repeat center top;
-}
-
-.main #add {
-  background: url('img/png/add.png') no-repeat center center;
-  width: 111px;
-}
-
-.main #add:hover, .main #add:focus {
-  background: url('img/png/add-hover.png') no-repeat center top;
-}
-
-.main #love {
-  background: url('img/png/love.png') no-repeat center center;
-  width: 91px;
-}
-
-.main #love:hover, .main #love:focus {
-  background: url('img/png/love-hover.png') no-repeat center top;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
 }
 
 @keyframes pulse-infinite {
@@ -224,14 +251,14 @@ html, body {
 }
 
 .main #arrow {
-  width: 300px;
+  width: 10rem;
   height: auto;
   animation: 1.6s ease 0s infinite normal both running pulse-infinite;
   -webkit-animation: 1.6s ease 0s infinite normal both running pulse-infinite;
+  margin-bottom: 0;
 }
 
 /* Supporting */
-
 .supporting {
   padding: 72px 0;
 }
@@ -274,6 +301,7 @@ html, body {
   margin-top: 10px;
   transition: background .2s;
   -webkit-transition: background .2s;
+  padding: 1rem 2rem;
 }
 
 .supporting .btn:hover {
@@ -282,10 +310,9 @@ html, body {
 }
 
 /* Download */
-
 .download {
   min-height: 440px;
-  background: url('img/jpg/download.jpg') no-repeat center center;
+  background: url('img/bg_download.jpeg') no-repeat center center;
   background-size: cover;
   text-align: center;
   padding: 48px 0;
@@ -312,7 +339,8 @@ html, body {
   display: block;
   margin: 0 auto;
   padding-bottom: 48px;
-  width: 240px;
+  width: 20rem;
+  margin-top: 1.5rem;
   height: auto;
   filter: contrast(1.2) brightness(120%);
   animation: 1.6s ease 0s infinite normal both running pulse-infinite-2;
@@ -335,7 +363,6 @@ html, body {
 }
 
 /* Footer */
-
 .footer {
   text-align: center;
   padding-top: 20px;

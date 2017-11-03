@@ -1,4 +1,4 @@
-# Bass · Turn on the Bass
+# Bass
 
 <a href="https://gabrielecanepa.github.io/bass" target="_blank"><img src="img/og.png" height="150" alt="" title="Bass"/></a>
 

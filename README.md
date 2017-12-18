@@ -1,10 +1,10 @@
 # Bass
 
+### [See Live](https://gabrielecanepa.github.io/bass)
+
 <a href="https://gabrielecanepa.github.io/bass" target="_blank"><img src="img/og.png" width="100%" alt="" title="Bass"/></a>
 
 ---
-
-### [See Live](https://gabrielecanepa.github.io/bass)
 
 > The palette and all the images not developed by the author belong to *Codecademy*. This sample web page has never been used for lucrative purposes and outside Codecademy's environment, and is only available at [Github's author personal page](https://www.github.com/gabrielecanepa) and [Codecademy's profile](https://www.codecademy.com/gabrielecanepa).
 

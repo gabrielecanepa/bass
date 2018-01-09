@@ -7,7 +7,6 @@ html, body {
   color: #FFF;
 }
 
-/* Jumbotron */
 .jumbotron {
   background: url('img/bg.jpg') no-repeat center center;
   background-size: cover;
@@ -127,7 +126,6 @@ html, body {
   padding-bottom: 16px;
   margin-bottom: 28px;
 }
-
 
 .main p:before {
   position: absolute;
@@ -260,7 +258,6 @@ html, body {
   margin-bottom: 0;
 }
 
-/* Supporting */
 .supporting {
   padding: 72px 0;
 }
@@ -311,7 +308,6 @@ html, body {
   color: #FFF;
 }
 
-/* Download */
 .download {
   min-height: 440px;
   background: url('img/bg_download.jpeg') no-repeat center center;
@@ -364,7 +360,6 @@ html, body {
   cursor: pointer;
 }
 
-/* Footer */
 .footer {
   text-align: center;
   padding-top: 20px;

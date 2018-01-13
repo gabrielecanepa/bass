@@ -12,6 +12,7 @@
     <meta name="theme-color" content="#FFFFFF">
     <title>Bass</title>
     <link rel="stylesheet" type="text/css" href="libraries/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="libraries/fontawesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -23,23 +24,38 @@
   <body>
     <div class="jumbotron">
       <div class="container">
-        <div class="header row">
-          <img title="Bass.com" alt="Bass.com" src="img/logo.png" id="logo"/>
-          <ul class="pull-right">
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#" class="btn btn-default">Download</a></li>
-          </ul>
-        </div>
-        <div class="main row">
-          <h1>Music is now<span class="points" id="h1-point">.</span><span>Turn up the bass<span class="points">.</span></h1>
-          <p><span class="underline">From the <a title="Browse &raquo;">newest releases</a> to <a title="Browse &#8594;">classic albums</a><span class="points">,</span> we have the best music for you to enjoy<span class="points">.</span></span></p>
-          <div class="features">
-            <img src="img/icon_music.svg" alt=""/>
-            <img src="img/icon_play.svg" alt=""/>
-            <img src="img/icon_heart.svg" alt=""/>
+        <div class="row">
+          <div class="header">
+            <img title="Bass.com" alt="Bass.com" src="img/logo.png" id="logo"/>
+            <ul class="pull-right hidden-xs hidden-sm">
+              <li><a href="#">Sign Up</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#" class="btn btn-default">Download</a></li>
+            </ul>
+            <div class="dropdown pull-right hidden-md hidden-lg">
+              <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+              <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+                <li><a href="#">Host</a></li>
+                <li><a href="#">Trips</a></li>
+                <li><a href="#">Messagese</a></li>
+              </ul>
+            </div>
+            <ul class="pull-right hidden-md hidden-lg">
+
+            </ul>
           </div>
-          <img alt="" src="img/icon_arrow.svg" id="arrow"/>
+        </div>
+        <div class="row">
+          <div class="main">
+            <h1>Music is now<span class="points" id="h1-point">.</span><span>Turn up the bass<span class="points">.</span></h1>
+            <p><span class="underline">From the <a title="Browse &raquo;">newest releases</a> to <a title="Browse &#8594;">classic albums</a><span class="points">,</span> we have the best music for you to enjoy<span class="points">.</span></span></p>
+            <div class="features">
+              <img src="img/icon_music.svg" alt=""/>
+              <img src="img/icon_play.svg" alt=""/>
+              <img src="img/icon_heart.svg" alt=""/>
+            </div>
+            <img alt="" src="img/icon_arrow.svg" id="arrow"/>
+          </div>
         </div>
       </div>
     </div>

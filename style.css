@@ -1,113 +1,23 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
 
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #161718;
-  color: #FFF;
-}
-
-.jumbotron {
-  background: url('img/bg.jpg') no-repeat center center;
-  background-size: cover;
-  padding: 60px 80px;
-}
-
-.header {
-  margin-bottom: 80px;
-}
-
-.header #logo {
-  width: 120px;
-  height: auto;
-  display: inline-block;
-}
-
-.header #logo:hover {
-  cursor: pointer;
-}
-
-.header ul {
-  list-style: none;
-  display: inline-block;
-  margin-top: 48px;
-}
-
-.header li {
-  padding: 0 16px;
-  display: inline;
-}
-
-.header li a {
-  cursor: pointer;
-  color: #FFF;
-  font-size: 16px;
-  transition: border-bottom .04s;
-  -webkit-transition: border-bottom .04s;
-}
-
-.header li a:hover {
-  text-decoration: none;
-  border-bottom: 2px solid #FF003D;
-}
-
-.header .btn {
-  color: #FF003D;
-  background-color: transparent;
-  padding: 1rem 2rem;
-  border: 2px solid #FF003D;
-  border-radius: 5px;
-  transition: background .16s;
-  -webkit-transition: background .16s;
-}
-
-.header .btn:hover {
-  background-color: #FF003D;
-  color: #FFF;
-  border: 2px solid #FF003D;
-}
-
-.main {
-  text-align: center;
-}
-
+/*Animations*/
 @keyframes pulse {
   from {
-    transform: scale3d(1, 1, 1);
     -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 
   50% {
-    transform: scale3d(1.08, 1.08, 1.08);
     -webkit-transform: scale3d(1.08, 1.08, 1.08);
+    transform: scale3d(1.08, 1.08, 1.08);
   }
 
   to {
-    transform: scale3d(1, 1, 1);
     -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
-
-.main h1 {
-  font-size: 80px;
-  font-family: 'PT Sans Narrow', sans-serif;
-  color: #FFF;
-  text-shadow: .4px .4px #000;
-  letter-spacing: .8px;
-  animation: 1.6s ease 0s 4 normal both running pulse;
-  -webkit-animation: 1.6s ease 0s 4 normal both running pulse;
-  letter-spacing: 0.1rem;
-}
-
-.main h1 #h1-point {
-  font-size: 80px;
-}
-
-.main h1 span {
-  font-size: 120px;
-  font-weight: bold;
-}
-
 @keyframes underline {
   to {
     visibility: visible;
@@ -115,57 +25,6 @@ html, body {
     -webkit-transform: scaleX(1);
   }
 }
-
-.main p {
-  position: relative;
-  font-size: 26px;
-  font-weight: 300;
-  text-shadow: .4px .4px #000;
-  text-decoration: none;
-  padding-bottom: 16px;
-  margin-bottom: 28px;
-}
-
-.main p:before {
-  position: absolute;
-  content: "";
-  width: 992px;
-  height: 8px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0 auto;
-  background-color: #FF003D;
-  visibility: hidden;
-  transform: scaleX(0);
-  -webkit-transform: scaleX(0);
-  animation: 1.6s ease 0s 1 normal both running underline;
-  -webkit-animation: 1.6s ease 0s 1 normal both running underline;
-}
-
-.main p a {
-  color: #FFF;
-  font-weight: bold;
-  transition: .4s;
-  -webkit-transition: .4s;
-}
-
-.main p a:hover {
-  color: #FF003D;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.main .points {
-  color: #FF003D;
-}
-
-.main .features {
-  margin-bottom: 28px;
-}
-
 @-webkit-keyframes hvr-bob {
   0% {
     -webkit-transform: translateY(-8px);
@@ -206,7 +65,154 @@ html, body {
     transform: translateY(-8px);
   }
 }
+@keyframes pulse-infinite {
+  from {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
 
+  50% {
+    transform: scale3d(1.16, 1.16, 1.16);
+    -webkit-transform: scale3d(1.16, 1.16, 1.16);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse-infinite-2 {
+  from {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.04, 1.04, 1.04);
+    -webkit-transform: scale3d(1.04, 1.04, 1.04);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+
+/*Style*/
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #161718;
+  color: #FFF;
+}
+.jumbotron {
+  background: url("http://i.cubeupload.com/fqoYOo.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 4rem;
+}
+.header #logo {
+  width: 12rem;
+  height: auto;
+  display: inline-block;
+}
+.header ul {
+  list-style: none;
+  display: inline-block;
+  margin-top: 4.6rem;
+}
+.header li {
+  padding: 0 1.5rem;
+  display: inline;
+}
+.header li a {
+  cursor: pointer;
+  color: #FFF;
+  font-size: 1.6rem;
+  transition: border-bottom 200ms;
+  -webkit-transition: border-bottom 200ms;
+  -o-transition: border-bottom 200ms;
+  -moz-transition: border-bottom 200ms;
+}
+.header li a:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #FF003D;
+}
+.header .btn {
+  color: #FF003D;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  border: 2px solid #FF003D;
+  border-radius: 8px;
+  transition: background .16s;
+  -webkit-transition: background .16s;
+  -o-transition: background .16s;
+  -moz-transition: background .16s;
+}
+.header .btn:hover {
+  background-color: #FF003D;
+  color: #FFF;
+  border: 2px solid #FF003D;
+}
+.main h1 {
+  font-size: 8rem;
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #FFF;
+  text-shadow: .4px .4px #000;
+  margin-top: 4rem;
+  animation: 1.6s ease 0s 4 normal both running pulse;
+  -webkit-animation: 1.6s ease 0s 4 normal both running pulse;
+  -moz-animation: 1.6s ease 0s 4 normal both running pulse;
+}
+.main h1 #h1-point {
+  font-size: 8rem;
+}
+.main h1 span {
+  font-size: 11rem;
+  font-weight: bold;
+}
+.main p {
+  position: relative;
+  font-size: 22px;
+  font-weight: 300;
+  text-shadow: .4px .4px #000;
+  text-decoration: none;
+  padding-bottom: 16px;
+}
+.main p:before {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 8px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  background-color: #FF003D;
+  visibility: hidden;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  animation: 1.6s ease 0s 1 normal both running underline;
+  -webkit-animation: 1.6s ease 0s 1 normal both running underline;
+}
+.main p a {
+  color: #FFF;
+  font-weight: bold;
+  transition: .4s;
+  -webkit-transition: .4s;
+}
+.main p a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  border-bottom: 1px solid #FF003D;
+}
+.main .points {
+  color: #FF003D;
+}
+.main .features {
+  margin-bottom: 2.5rem;
+}
 .main .features img {
   width: 10rem;
   margin: 4rem;
@@ -231,65 +237,41 @@ html, body {
   -webkit-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
-
-@keyframes pulse-infinite {
-  from {
-    transform: scale3d(1, 1, 1);
-    -webkit-transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    transform: scale3d(1.16, 1.16, 1.16);
-    -webkit-transform: scale3d(1.16, 1.16, 1.16);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-    -webkit-transform: scale3d(1, 1, 1);
-  }
-}
-
 .main #arrow {
   width: 10rem;
   height: auto;
   animation: 1.6s ease 0s infinite normal both running pulse-infinite;
   -webkit-animation: 1.6s ease 0s infinite normal both running pulse-infinite;
-  margin-bottom: 0;
 }
-
 .supporting {
-  padding: 72px 0;
+  padding: 6rem 2rem;
 }
-
 .supporting:nth-child(2) {
   padding-top: 40px;
 }
-
 .supporting:nth-child(2n+1) {
   background-color: #000;
   padding-left: 100px;
 }
-
 .supporting img {
   width: 60%;
   height: auto;
 }
-
+.supporting .img-lg {
+  width: 80%;
+}
 .supporting h2 {
   font-size: 46px;
 }
-
 .supporting p {
   width: 90%;
   font-size: 22px;
   font-weight: 300;
   text-shadow: .5px .5px .5px #000;
 }
-
 .supporting p span {
   color: #FF003D
 }
-
 .supporting .btn {
   font-size: 26px;
   color: #FF003D;
@@ -299,92 +281,120 @@ html, body {
   margin-top: 10px;
   transition: background .2s;
   -webkit-transition: background .2s;
-  padding: 1rem 2rem;
 }
-
 .supporting .btn:hover {
   background-color: #FF003D;
   color: #FFF;
 }
-
 .download {
   min-height: 440px;
-  background: url('img/bg_download.jpeg') no-repeat center center;
+  background: url('http://i.cubeupload.com/2ebeUY.jpeg') no-repeat center center;
   background-size: cover;
   text-align: center;
   padding: 48px 0;
 }
-
-@keyframes pulse-infinite-2 {
-  from {
-    transform: scale3d(1, 1, 1);
-    -webkit-transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    transform: scale3d(1.04, 1.04, 1.04);
-    -webkit-transform: scale3d(1.04, 1.04, 1.04);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-    -webkit-transform: scale3d(1, 1, 1);
-  }
-}
-
 .download #app {
   display: block;
   margin: 0 auto;
   padding-bottom: 48px;
-  width: 20rem;
-  margin-top: 1.5rem;
+  width: 240px;
   height: auto;
   filter: contrast(1.2) brightness(120%);
   animation: 1.6s ease 0s infinite normal both running pulse-infinite-2;
   -webkit-animation: 1.6s ease 0s infinite normal both running pulse-infinite-2;
 }
-
 .download #app:hover {
   cursor: pointer;
 }
-
 .download .store {
   display: inline-block;
   height: 60px;
   width: auto;
   margin: 0 20px;
 }
-
 .download .store:hover {
   cursor: pointer;
 }
-
 .footer {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 48px;
 }
-
 .footer h4 {
   margin-top: 34px;
-  font-size: 18px;
+  font-size: 16px;
   display: block;
   text-transform: uppercase;
   transition: .32s;
   -webkit-transition: .32s;
 }
-
 .footer h4:hover {
   color: #FF003D;
   cursor: pointer;
 }
-
 .footer a {
   display: block;
   color: #FFF;
 }
-
 .footer a:hover {
   text-decoration: underline solid #FF003D;
   -webkit-text-decoration: underline solid #FF003D;
+}
+
+/*Mobile resizing*/
+@media only screen and (max-width: 768px) {
+  .header li a {
+    font-size: 1.5rem;
+  }
+  .main h1 {
+    font-size: 6rem;
+  }
+  .main h1 span {
+    font-size: 8rem;
+    display: block;
+  }
+  .main .points {
+    display: inline;
+  }
+  .main p {
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    padding-bottom: 0;
+  }
+  .main p:before {
+    display: none;
+  }
+  .main .features img {
+    width: 8rem;
+  }
+  .supporting {
+    text-align: center;
+  }
+  .supporting:nth-child(2) {
+    padding-left: 0;
+  }
+  .supporting:nth-child(2n+1) {
+    padding-left: 0;
+  }
+  .supporting img {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+  .supporting .img-lg {
+    width: 60%;
+    padding-bottom: 4rem;
+  }
+  .supporting p {
+    padding-left: 6rem;
+  }
+  .supporting #world {
+    margin-top: 4rem;
+  }
+  .download #app {
+    width: 150px;
+  }
+  .download .store {
+    height: 40px;
+  }
 }

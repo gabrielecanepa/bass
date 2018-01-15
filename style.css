@@ -10,11 +10,11 @@ html, body {
 .jumbotron {
   background: url('img/bg.jpg') no-repeat center center;
   background-size: cover;
-  height: 100vh;
+  padding: 60px 80px;
 }
 
 .header {
-  margin-bottom: 8px;
+  margin-bottom: 80px;
 }
 
 .header #logo {

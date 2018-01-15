@@ -10,7 +10,6 @@ html, body {
 .jumbotron {
   background: url('img/bg.jpg') no-repeat center center;
   background-size: cover;
-  padding: 60px 80px;
   height: 100vh;
 }
 

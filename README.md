@@ -2,7 +2,7 @@
 
 ### [See Live](https://gabrielecanepa.github.io/bass)
 
-<a href="https://gabrielecanepa.github.io/bass" target="_blank"><img src="img/og.png" width="100%" alt="" title="Bass"/></a>
+<a href="https://gabrielecanepa.github.io/bass" target="_blank"><img src="img/thumbnail.png" width="100%" alt="" title="Bass"/></a>
 
 ---
 

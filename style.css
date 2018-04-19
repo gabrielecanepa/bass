@@ -1,104 +1,5 @@
-/*Fonts*/
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
 
-/*Animations*/
-@keyframes pulse {
-  from {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.08, 1.08, 1.08);
-    transform: scale3d(1.08, 1.08, 1.08);
-  }
-
-  to {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes underline {
-  to {
-    visibility: visible;
-    transform: scaleX(1);
-    -webkit-transform: scaleX(1);
-  }
-}
-@-webkit-keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-@keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-@-webkit-keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-@keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-@keyframes pulse-infinite {
-  from {
-    transform: scale3d(1, 1, 1);
-    -webkit-transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    transform: scale3d(1.16, 1.16, 1.16);
-    -webkit-transform: scale3d(1.16, 1.16, 1.16);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-    -webkit-transform: scale3d(1, 1, 1);
-  }
-}
-@keyframes pulse-infinite-2 {
-  from {
-    transform: scale3d(1, 1, 1);
-    -webkit-transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    transform: scale3d(1.04, 1.04, 1.04);
-    -webkit-transform: scale3d(1.04, 1.04, 1.04);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-    -webkit-transform: scale3d(1, 1, 1);
-  }
-}
-
-/*Style*/
 html, body {
   margin: 0;
   padding: 0;
@@ -341,7 +242,102 @@ html, body {
   -webkit-text-decoration: underline solid #FF003D;
 }
 
-/*Mobile resizing*/
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.08, 1.08, 1.08);
+    transform: scale3d(1.08, 1.08, 1.08);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes underline {
+  to {
+    visibility: visible;
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+  }
+}
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes pulse-infinite {
+  from {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.16, 1.16, 1.16);
+    -webkit-transform: scale3d(1.16, 1.16, 1.16);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse-infinite-2 {
+  from {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.04, 1.04, 1.04);
+    -webkit-transform: scale3d(1.04, 1.04, 1.04);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .header li a {
     font-size: 1.5rem;
